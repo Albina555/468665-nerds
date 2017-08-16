@@ -8,7 +8,7 @@
   <header class="main-header">
     <nav class="main-navigation">
     <a class="header logo">
-       <img src="#" width="100" height="100" alt="Логотип Nerd's">
+       <img src="img/nerds-logo.png" width="100" alt="Логотип Nerd's">
     </a>
     <ul class="site-navigation">
      <li><a href="studio.html">Студия</a></li>
@@ -25,16 +25,17 @@
   <section class="filters">
    <h2 class="visually-hidden">Фильтры</h2>
     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+    </form>
+    </section>
      <fieldset>
      <legend>Стоимость</legend>
-
-     <input type="">
-     <label>от</label>
+     <input type="range" min="0" max="15000" step="1">     
+     <label>от</label>  
      <form action="https://echo.htmlacademy.ru" method="get">
-       <input type="text" name="price">
+       <input type="text" name="price"></form>
      <label>до</label>
    <form action="https://echo.htmlacademy.ru" method="get">
-     <input type="text" name="price">
+     <input type="text" name="price"></form>
     </fieldset>
     <fieldset>
     <h3>Сетка</h3>
@@ -57,32 +58,30 @@
     <h3>Особенности</h3>
      <ul>
      <li class="filter-option">
-      <input type="radio" name="slader" checked>
-      <legend>Слайдер</legend>
+      <input type="radio" name="slider" id="radio" checked>
+      <label for="radio">Слайдер</label>
       </li>
       <li class="filter-option">
-      <input type="radio" name="advantage-block">
-      <legend>Блок преимуществ</legend>
+      <input type="radio" name="advantage-block" id="advantage-block">
+      <label for="advantage-block">Блок преимуществ</label>
       </li>
       <li class="filter-option">
-      <input type="radio" name="news" checked>
-      <legend>Новости</legend>
-      </li>
+      <input type="radio" name="news" id="news" checked>
+      <label for="news">Новости</label>
+      </li>      
+      <li class="filter-option">
+      <input type="radio" name="gallery" id="gallery">
+      <label for="gallery">Галерея</label>
       </li>
       <li class="filter-option">
-      <input type="radio" name="gallery">
-      <legend>Галерея</legend>
-      </li>
-      <li class="filter-option">
-      <input type="radio" name="basket">
-      <legend>Корзина</legend>
+      <input type="radio" name="basket" id="basket">
+      <label for="basket">Корзина</label>
       </li>  	
     </ul>
-    </fieldset>
+    </fieldset>    
     <fieldset>
     <button type="submit" class="filter-button button">Показать</button>
-    </fieldset>
-     </form>
+    </fieldset> 
     	<section class="sort">
     		<h3>Сортировать</h3>
     		<ul>
@@ -98,24 +97,25 @@
     		</ul>
     	</section>
     	<section class="catalog">
+    	<h2 class="visually-hidde">Каталог</h2>
     	  <ul class="catalog-list">
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-sedona.jpg" width="100" alt="Шаблон-1"></a>
     	  	</li>
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-pink.jpg" width="100" alt="Шаблон-2"></a>
     	  	</li>
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-barbershop.jpg" width="100" alt="Шаблон-3"></a>
     	  	</li>
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-mishka.jpg" width="100" alt="Шаблон-4"></a>
     	  	</li>
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-aplus.jpg" width="100" alt="Шаблон-5"></a>
     	  	</li>
     	  	<li class="catalog-item">
-    	  	<a href=#><img src="#" width="100" height="200"></a>
+    	  	<a href=#><img src="img/img-kvast.jpg" width="100" alt="Шаблон-6"></a>
     	  	</li>
     	  </ul> 		
     	</section>
@@ -127,8 +127,8 @@
  		</ul>  
 <footer class="main-footer">
    <div class="location">
-    <img src="#" width="400" height="300">
-    <img src="#" width="50" height="50">
+    <img src="img/map.jpg" width="400" alt="Карта">
+    <img src="img/map-marker.png" width="50" alt="Месторасположения">
    </div>
    <b>NERFD DESIGN STUDIO</b>
    <p class="footer-addredd">
@@ -146,6 +146,5 @@
     </ul>
     </div>
   </footer>
-
   </body>
 </html>
