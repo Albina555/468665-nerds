@@ -24,33 +24,29 @@
   <h1>Магазин готовых шабронов</h1>
   <section class="filters">
    <h2 class="visually-hidden">Фильтры</h2>
-    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-    </form>
-    </section>
-     <fieldset>
-     <legend>Стоимость</legend>
-     <input type="range" min="0" max="15000" step="1">     
-     <label>от</label>  
-     <form action="https://echo.htmlacademy.ru" method="get">
-       <input type="text" name="price"></form>
-     <label>до</label>
-   <form action="https://echo.htmlacademy.ru" method="get">
-     <input type="text" name="price"></form>
+	<fieldset>
+     <h3>Стоимость</h3>
+    <form class="range" method="get" action="https://echo.htmlacademy.ru">   
+     <input type="range" min="0" max="15000" step="1" value="100">
+          <label>от<input type="text" name="price"></label>
+        <label>до<input type="text" name="price"></label>
+     </form>
     </fieldset>
+
     <fieldset>
     <h3>Сетка</h3>
     <ul>
      <li class="filter-option">
-     	<input type="checkbox" name="adaptive" checked>
-     	<label>Адаптивная</label>
+     	<input type="checkbox" name="adaptive" id="adaptive" checked>
+     	<label for="adaptive">Адаптивная</label>
      </li>
      <li class="filter-option">
-     	<input type="checkbox" name="fixed">
-     	<label>Фиксированная</label>
+     	<input type="checkbox" name="fixed" id="fixed">
+     	<label for="fixed">Фиксированная</label>
      </li>
      <li class="filter-option">
-     	<input type="checkbox" name="rubber">
-     	<label>Резиновая</label>
+     	<input type="checkbox" name="rubber" id="rubber">
+     	<label for="rubber">Резиновая</label>
      </li>
     </ul>  	
     </fieldset>
@@ -82,6 +78,7 @@
     <fieldset>
     <button type="submit" class="filter-button button">Показать</button>
     </fieldset> 
+    </section>
     	<section class="sort">
     		<h3>Сортировать</h3>
     		<ul>
