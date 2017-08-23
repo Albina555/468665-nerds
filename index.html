@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href=css/normalize.css rel="stylesheet>
   </head>
   <body>
-  <header class="main-header">
-    <nav class="main-navigation">
+
+  <header class="main-header">  
+      <nav class="main-navigation">
     <a class="header logo">
        <img src="img/nerds-logo.png" width="100" alt="Логотип Nerd's">
     </a>
     <ul class="site-navigation">
      <li><a href="studio.html">Студия</a></li>
      <li><a href="clients.html">Клиенты</a></li>
-     <li><a href="ырщз.html">Магазин</a></li>
+     <li><a href="shop.html">Магазин</a></li>
      <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="busket">
@@ -23,14 +26,15 @@
     </nav>
   </header>
   <main class="container">
+  <section class="slogan">
    <h1 class="visually-hidden">Дизайн-студия NERDS</h1>
-   <section class="slogan">
    <h2 class="visually-hidden">О студии NERDS</h2>
     <b>Долго, дорого, скурпулезно</b>
     <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
     <a class="button" href="info.html">Узнать больше</a>
     <img src="img/slide1.jpg" width="200" alt="Узнать больше">
-    </section>
+     </section>
+   
 <article class="products">
  <h2 class="visually-hidden">Список продуктов</h2>
    <ul class="product-list">
@@ -38,19 +42,19 @@
      <img src="img/illustration-1.jpg" width="100" alt="Веб-сайты">
      <h3>Веб-сайты</h3>
      <p>Мир никогда не будет прежним после того, как увидит ваш сайт</p>
-     <button>Заказать</button>
+     <button class="btn-1">Заказать</button>
     </li>
     <li>
      <img src="img/illustration-2.jpg" width="100" alt="Заказать">
      <h3>Приложения</h3>
      <p>Покорите топ-100 приложений в AppStore и Google Play</p>
-     <button>Заказать</button>
+     <button class="btn-2">Заказать</button>
     </li>
         <li>
      <img src="img/illustration-3.jpg" width="100" alt="Заказать">
      <h3>Презентации</h3>
      <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-     <button>Заказать</button>
+     <button class="btn-3">Заказать</button>
     </li>
    </ul>
 
@@ -60,7 +64,7 @@
     <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
    </section>
-   <section class="secvises">
+   <section class="services">
     <h2 class="visually-hidden">Услуги</h2>
     <b>Выполняем заказы на разработку:</b>
     <ul>
@@ -74,12 +78,12 @@
     <img src="img/nerds-illustration.jpg" width="100" alt="Nerd's иллюстрация">
     <b>C 2004 года любим точность во всём:</b>
     <table>
-     <tr>
+     <tr class=percents>
       <td>146%</td>
       <td>100%</td>
       <td>50%</td>
      </tr>
-     <tr>
+     <tr class=feature-item>
       <td>Уровень самоотдачи</td>
       <td>Соблюдение сроков</td>
       <td>Минимальная предоплата</td>
@@ -101,7 +105,7 @@
     <img src="img/map.jpg" width="400" alt="Карта">
     <img src="img/map-marker.png" width="50" alt="Месторасположение">
    </div>
-   <b>NERFD DESIGN STUDIO</b>
+   <span class="studio-name"><b>NERFD DESIGN STUDIO</b></span>
    <p class="footer-addredd">
    119156, Санкт-Петербург,<br>
    ул. Б. Конюшенная, д. 19/8<br></p>
@@ -118,7 +122,5 @@
     </div>
   </footer>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
-  </body>
+    </body>
 </html>
