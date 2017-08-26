@@ -3,8 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
+  
   <body>
+  <div class="container-top"
   <header class="main-header">
     <nav class="main-navigation">
     <a class="header logo">
@@ -21,12 +26,15 @@
     </ul>
     </nav>
   </header>
-  <h1>Магазин готовых шабронов</h1>
+  
+  <h1>Магазин готовых шаблонов</h1>
+  </div>
+
   <section class="filters">
    <h2 class="visually-hidden">Фильтры</h2>
 	<fieldset>
-     <h3>Стоимость</h3>
-    <form class="range" method="get" action="https://echo.htmlacademy.ru">   
+     <h3 class="filter-item">Стоимость</h3>
+    <form class="form" method="get" action="https://echo.htmlacademy.ru">   
      <input type="range" min="0" max="15000" step="1" value="100">
           <label>от<input type="text" name="price"></label>
         <label>до<input type="text" name="price"></label>
@@ -34,8 +42,8 @@
     </fieldset>
 
     <fieldset>
-    <h3>Сетка</h3>
-    <ul>
+    <h3 class="filter-item">Сетка</h3>
+    <ul class="net">
      <li class="filter-option">
      	<input type="checkbox" name="adaptive" id="adaptive" checked>
      	<label for="adaptive">Адаптивная</label>
@@ -51,8 +59,8 @@
     </ul>  	
     </fieldset>
     <fieldset>
-    <h3>Особенности</h3>
-     <ul>
+    <h3 class="filter-item">Особенности</h3>
+     <ul class="items">
      <li class="filter-option">
       <input type="radio" name="slider" id="radio" checked>
       <label for="radio">Слайдер</label>
@@ -76,12 +84,12 @@
     </ul>
     </fieldset>    
     <fieldset>
-    <button type="submit" class="filter-button button">Показать</button>
+    <button type="submit" class="filter-button">Показать</button>
     </fieldset> 
     </section>
     	<section class="sort">
     		<h3>Сортировать</h3>
-    		<ul>
+    		<ul class="sort-items">
     		<li>
     		<a href="#"><p>по цене</p></a>
     		</li>
@@ -118,11 +126,20 @@
     	</section>
     	<ul class="pagination-list">
     	<li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-    	<li class="pagination-item"><a href="#">2</a></li>
+    	<li class="pagination-item"><a class="btn-pagination" href="#">2</a></li>
     	<li class="pagination-item"><a href="#">3</a></li>
     	<li class="pagination-item"><a href="#">Следующая</a></li>
  		</ul>  
 <footer class="main-footer">
+<section class="feedback">
+<h3 class="write-us">Напишите нам</h3>
+<form class=feedback-forms>
+<label class="feedback-item">Ваше имя:</label><input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+<label class="feedback-item">Ваш e-mail:</label><input type="text" name="email" placeholder="Для отправки ответа">
+<label class="feedback-item">Текст письма:</label><textarea rows="2" name="email" placeholder="В свободной форме"></textarea>
+<button type="submit" class="send">Отправить</button>
+</form>
+</section>
    <div class="location">
     <img src="img/map.jpg" width="400" alt="Карта">
     <img src="img/map-marker.png" width="50" alt="Месторасположения">
@@ -136,7 +153,7 @@
    <div class="footer-social">
     <b>Давайте дружить, это выгодно!</b>
     <p>Скидка 10% для друзей из социальных сетей</p>
-    <ul>
+    <ul class="social-button-list">
      <li><a class="social-button" href="#">Вконтакте</a></li>
      <li><a class="social-button" href="#">Фейсбук</a></li>
      <li><a class="social-button" href="#">Инстаграмм</a></li>

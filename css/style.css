@@ -14,13 +14,8 @@ font-weight: normal;
 background-color: #ffffff;
 }
 
-nav,
-.slogan {
-background-color: #ededed;
-}
-
 h1 {
-font-size: 10px;
+font-size: 55px;
   
 font-family: "Roboto";
   
@@ -42,77 +37,183 @@ line-height: 1.667;
 }
   
 
+.filter-item {
+font-size: 18px;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.container-top {
+background-color: #eeeeee;
+}
+
+.slogan b {
+font-size: 55px;
+}
 
 .site-navigation,
-.busket {
+.busket,
+.social-button-list,
+.net,
+.items,
+.sort-items,
+.catalog-list,
+.pagination-list { 
 list-style: none;
 }
 
 .site-navigation a,
 .busket a {
-text-decoration: none;
-font-size: 10,15px; 
+font-size: 16px;
 text-transform: uppercase;
-line-height: 1.875;
-  
-text-align: left;
- 
-} 
-.slogan b {
-font-size: 55px;
-  
-text-align: left;
-
+text-decoration: none;
 }
-.slogan a {
+
+.sort-items a {
+text-decoration: none;
+}
+
+.site-navigation a:hover,
+.busket a:hover  {
+color: #fb565a;
+}
+
+.site-navigation a:active,
+.busket a:active {
+color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-more {
+color: #ffffff;
+text-decoration: none;
+background-color: #fb565a;
+text-align;
+}
+
+.btn-more:hover {
+background-color: #e74246;
+}
+.btn-more:active {
+background-color: #d7373b;
+opacity: .3;
+}
+
+.btn-order {
+color: #ffffff;
 text-transform: uppercase;
 text-align: center;
-text-decoration: none;
-text-align: center;
-color: rgb(255, 255, 255);
-
- 
+}
+.btn-red {
+background-color: #fb565a;
 }
 
-.product-list button {
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
-color: rgb(255, 255, 255);
-  
-line-height: 1.125;
-
-
+.btn-green {
+background-color: #00ca74;
 }
 
-.bnt-1 {
-background-image: url("img/Layer 42.jpg");
+.btn-yellow {
+background-color: #efc84a;
 }
-.promo b {
+
+.promo b,
+.write-us {
 font-size: 45px;
 }
 
-.services b,
-.features b {
-text-transform: uppercase;
+.services b {
+font-size: 16px;
 font-weight: bold;
-}
-.services li {
-line-height: 1.5;
-
+text-transform: uppercase;
 }
 
-table .percents {
-font-size: 45px;
+.features b {
+font-size: 16px;
+text-transform: uppercase;
 font-weight: bold;
 }
 
 .studio-name b {
 font-size: 18px;
-text-transform: uppercase;
 font-weight: bold;
 }
+
+.percents td {
+font-size: 45px;
+font-weight: bold;
+}
+
+.pagination-list a {
+text-decoration: none;
+color: #000000;
+}
+
+.filter-button {
+text-transform: uppercase;
+text-align: center;
+background-color: #eeeeee;
+}
+
+.filter-button:hover {
+background-color: #dfdfdf;
+}
+.filter-button:focus {
+background-color: #dfdfdf;
+opacity: .3;
+}
+
+.sort-items a {
+color: rgba(0, 0, 0, 0.3);
+font-size: 14px;
+} 
+
+.sort-items a:hover {
+color: rgba(0, 0, 0, 0.6);
+}
+.sort-items a:active {
+color: #000000;
+}
+
+.feedback-item {
+font-weight: bold;
+}
+
+
+.pagination-item a {
+display: inline-block;
+background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+display: inline-block;
+background-color: #dedede;
+}
+
+.pagination-item a:active {
+display: inline-block;
+background-color: #d5d5d5;
+color: rgba(0, 0, 0, 0.3);
+}
+
+.send {
+background-color: #fb565a;
+color: #ffffff;
+text-align: center;
+text-transform: uppercase;
+}
+
+.contact-us {
+color: #ffffff;
+font-size: 16px;
+text-transfom: uppercase;
+text-align: center;
+background-color: #fb565a;
+}
+
 .footer-social b {
 font-size: 36px;
 font-weight: bold;
+}
+
+.social-button {
+text-decoration: none;
 }
