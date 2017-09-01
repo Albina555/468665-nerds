@@ -25,6 +25,17 @@ background-color: #ffffff;
 		color: #000000;
 		text-transform: uppercase;
 	}
+	.menu-items {
+		display: flex;
+		justify-content: space-between;
+	}
+	.menu-items li {
+		padding-left: 48px;
+	}
+	.menu-items,
+	.busket  {
+		list-style: none;
+	}
 .slogan {
 	display: flex;
 	justify-content: space-between;
@@ -258,17 +269,19 @@ color: rgba(0, 0, 0, 0.3);
 	display: inline-block;
 	position: relative;
 	width: 1440px;
-	height: 410px;
-	border: 1px solid #000000;
-    background-image: url("img/map.jpg");
-    background-position: 50% 50%;
+	height: 416px;
+	background-image: url("../img/map-marker.png"), url("../img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: 800px 80px, center;
+    
 }
 .contacts {
-	width: 300px;
-	heigh: 320px;
 	position: absolute;
 	top: 50px;
-	left: 85px;
+	left: 130px;
+	padding: 50px;
+	background-color: #ffffff;
+
 }
 }
 .send {
